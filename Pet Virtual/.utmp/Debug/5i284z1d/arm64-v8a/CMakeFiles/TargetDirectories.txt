@@ -1,0 +1,8 @@
+D:/codigos/Unity Projects/trabalho_comp_mob/Pet Virtual/.utmp/Debug/5i284z1d/arm64-v8a/CMakeFiles/edit_cache.dir
+D:/codigos/Unity Projects/trabalho_comp_mob/Pet Virtual/.utmp/Debug/5i284z1d/arm64-v8a/CMakeFiles/rebuild_cache.dir
+D:/codigos/Unity Projects/trabalho_comp_mob/Pet Virtual/.utmp/Debug/5i284z1d/arm64-v8a/GameActivity/CMakeFiles/game.dir
+D:/codigos/Unity Projects/trabalho_comp_mob/Pet Virtual/.utmp/Debug/5i284z1d/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+D:/codigos/Unity Projects/trabalho_comp_mob/Pet Virtual/.utmp/Debug/5i284z1d/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
+D:/codigos/Unity Projects/trabalho_comp_mob/Pet Virtual/.utmp/Debug/5i284z1d/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+D:/codigos/Unity Projects/trabalho_comp_mob/Pet Virtual/.utmp/Debug/5i284z1d/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+D:/codigos/Unity Projects/trabalho_comp_mob/Pet Virtual/.utmp/Debug/5i284z1d/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir
