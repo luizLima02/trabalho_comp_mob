@@ -1,0 +1,1625 @@
+fileFormatVersion: 2
+guid: 60e176187a408394783edda04626fd31
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7632865792995912708
+    second: pixaled_effect_white_0
+  - first:
+      213: 7854827388051045012
+    second: pixaled_effect_white_1
+  - first:
+      213: 4078267810397474827
+    second: pixaled_effect_white_2
+  - first:
+      213: -8111261055851739693
+    second: pixaled_effect_white_3
+  - first:
+      213: -4295361018804940271
+    second: pixaled_effect_white_4
+  - first:
+      213: -4059279903854552464
+    second: pixaled_effect_white_5
+  - first:
+      213: 9011230879402687244
+    second: pixaled_effect_white_6
+  - first:
+      213: -8485771077301518949
+    second: pixaled_effect_white_7
+  - first:
+      213: -7165698094622023450
+    second: pixaled_effect_white_8
+  - first:
+      213: -2811052549555363090
+    second: pixaled_effect_white_9
+  - first:
+      213: 3701348889522964387
+    second: pixaled_effect_white_10
+  - first:
+      213: 5876325992914116227
+    second: pixaled_effect_white_11
+  - first:
+      213: -2564917073486051303
+    second: pixaled_effect_white_12
+  - first:
+      213: 2970978861528967266
+    second: pixaled_effect_white_13
+  - first:
+      213: -8880985980613745506
+    second: pixaled_effect_white_14
+  - first:
+      213: 4646057110191938251
+    second: pixaled_effect_white_15
+  - first:
+      213: -6275296805543768953
+    second: pixaled_effect_white_16
+  - first:
+      213: 399301018556571298
+    second: pixaled_effect_white_17
+  - first:
+      213: -2748303032035580888
+    second: pixaled_effect_white_18
+  - first:
+      213: 1708937262325505389
+    second: pixaled_effect_white_19
+  - first:
+      213: 3031666756820787275
+    second: pixaled_effect_white_20
+  - first:
+      213: -6303004294155918412
+    second: pixaled_effect_white_21
+  - first:
+      213: 6473043720595068463
+    second: pixaled_effect_white_22
+  - first:
+      213: -8829158385837059025
+    second: pixaled_effect_white_23
+  - first:
+      213: 5325010218339886667
+    second: pixaled_effect_white_24
+  - first:
+      213: 2592875857553528210
+    second: pixaled_effect_white_25
+  - first:
+      213: 2503356914846601502
+    second: pixaled_effect_white_26
+  - first:
+      213: -3661422666637717775
+    second: pixaled_effect_white_27
+  - first:
+      213: 491369692412390605
+    second: pixaled_effect_white_28
+  - first:
+      213: -6234193628829649418
+    second: pixaled_effect_white_29
+  - first:
+      213: 6883812423716918299
+    second: pixaled_effect_white_30
+  - first:
+      213: -1332273075353264836
+    second: pixaled_effect_white_31
+  - first:
+      213: -5476917983502451315
+    second: pixaled_effect_white_32
+  - first:
+      213: 7734821372096558855
+    second: pixaled_effect_white_33
+  - first:
+      213: 3381872579048695216
+    second: pixaled_effect_white_34
+  - first:
+      213: 1438955917338833948
+    second: pixaled_effect_white_35
+  - first:
+      213: -5048092108562223540
+    second: pixaled_effect_white_36
+  - first:
+      213: -3112606124853069942
+    second: pixaled_effect_white_37
+  - first:
+      213: 2194303073625996642
+    second: pixaled_effect_white_38
+  - first:
+      213: 5550342750296066694
+    second: pixaled_effect_white_39
+  - first:
+      213: -4697898208285039270
+    second: pixaled_effect_white_40
+  - first:
+      213: -6596490032088017533
+    second: pixaled_effect_white_41
+  - first:
+      213: -4659495954798045446
+    second: pixaled_effect_white_42
+  - first:
+      213: -2230712838903684434
+    second: pixaled_effect_white_43
+  - first:
+      213: -7348456954102531785
+    second: pixaled_effect_white_44
+  - first:
+      213: 132047494365471908
+    second: pixaled_effect_white_45
+  - first:
+      213: 1382916696833410477
+    second: pixaled_effect_white_46
+  - first:
+      213: 1534190642407886671
+    second: pixaled_effect_white_47
+  - first:
+      213: -4690806266878313502
+    second: pixaled_effect_white_48
+  - first:
+      213: -2342804153371050711
+    second: pixaled_effect_white_49
+  - first:
+      213: -146976464122088173
+    second: pixaled_effect_white_50
+  - first:
+      213: -4284132238241253420
+    second: pixaled_effect_white_51
+  - first:
+      213: 1223745876750093291
+    second: pixaled_effect_white_52
+  - first:
+      213: -2952989769611458918
+    second: pixaled_effect_white_53
+  - first:
+      213: 4010789948190553538
+    second: pixaled_effect_white_54
+  - first:
+      213: -81281420101115793
+    second: pixaled_effect_white_55
+  - first:
+      213: -2794684186288436896
+    second: pixaled_effect_white_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pixaled_effect_white_0
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 6057
+        width: 69
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf39f3e700d921690800000000000000
+      internalID: -7632865792995912708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_1
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 5986
+        width: 71
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49abacc84e3f10d60800000000000000
+      internalID: 7854827388051045012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_2
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 5912
+        width: 142
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b00d6a947fae89830800000000000000
+      internalID: 4078267810397474827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_3
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 5913
+        width: 69
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d54f758b030f6f80800000000000000
+      internalID: -8111261055851739693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_4
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 5843
+        width: 72
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 112521449efc364c0800000000000000
+      internalID: -4295361018804940271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_5
+      rect:
+        serializedVersion: 2
+        x: 3097
+        y: 5914
+        width: 71
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a1ed63f6a8aa7c0800000000000000
+      internalID: -4059279903854552464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_6
+      rect:
+        serializedVersion: 2
+        x: 3957
+        y: 5843
+        width: 44
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0bf3d3cdb25e0d70800000000000000
+      internalID: 9011230879402687244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_7
+      rect:
+        serializedVersion: 2
+        x: 3527
+        y: 5843
+        width: 71
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9db82c2a2c7c3a80800000000000000
+      internalID: -8485771077301518949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_8
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 5701
+        width: 142
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e06c566c835e8c90800000000000000
+      internalID: -7165698094622023450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_9
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 5701
+        width: 71
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2ebca89922df8d0800000000000000
+      internalID: -2811052549555363090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_10
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 5770
+        width: 71
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a78dc55435dd5330800000000000000
+      internalID: 3701348889522964387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_11
+      rect:
+        serializedVersion: 2
+        x: 2813
+        y: 5771
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e5a004b57ec8150800000000000000
+      internalID: 5876325992914116227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_12
+      rect:
+        serializedVersion: 2
+        x: 2954
+        y: 5700
+        width: 71
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918878cd285976cd0800000000000000
+      internalID: -2564917073486051303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_13
+      rect:
+        serializedVersion: 2
+        x: 3742
+        y: 5629
+        width: 141
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 268e0ac98890b3920800000000000000
+      internalID: 2970978861528967266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5624
+        width: 94
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e942b4add4660c480800000000000000
+      internalID: -8880985980613745506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_15
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 5486
+        width: 286
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bca1b2b635c1a7040800000000000000
+      internalID: 4646057110191938251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_16
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 5557
+        width: 142
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c8b65adcaa9e8a0800000000000000
+      internalID: -6275296805543768953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_17
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 5556
+        width: 71
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ae1489292a9a8500800000000000000
+      internalID: 399301018556571298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_18
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 5271
+        width: 356
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 824e36814f01cd9d0800000000000000
+      internalID: -2748303032035580888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_19
+      rect:
+        serializedVersion: 2
+        x: 2097
+        y: 5558
+        width: 142
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6d1750c26d57b710800000000000000
+      internalID: 1708937262325505389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_20
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 5628
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b40e9a55ad4a21a20800000000000000
+      internalID: 3031666756820787275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_21
+      rect:
+        serializedVersion: 2
+        x: 3242
+        y: 5485
+        width: 69
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b3231d3dfa3788a0800000000000000
+      internalID: -6303004294155918412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_22
+      rect:
+        serializedVersion: 2
+        x: 3599
+        y: 5628
+        width: 70
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2654add7fed4d950800000000000000
+      internalID: 6473043720595068463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_23
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 5557
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f24558a1a37887580800000000000000
+      internalID: -8829158385837059025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_24
+      rect:
+        serializedVersion: 2
+        x: 3026
+        y: 5414
+        width: 143
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b466979949c36e940800000000000000
+      internalID: 5325010218339886667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_25
+      rect:
+        serializedVersion: 2
+        x: 3667
+        y: 5129
+        width: 334
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2951a24dadebbf320800000000000000
+      internalID: 2592875857553528210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_26
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 5486
+        width: 72
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e111377c9d5bdb220800000000000000
+      internalID: 2503356914846601502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_27
+      rect:
+        serializedVersion: 2
+        x: 2883
+        y: 5486
+        width: 72
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fece76db73003dc0800000000000000
+      internalID: -3661422666637717775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_28
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 5415
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc22a1c122b1d600800000000000000
+      internalID: 491369692412390605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_29
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 5342
+        width: 143
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f5fa9cbce1bb79a0800000000000000
+      internalID: -6234193628829649418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_30
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 5414
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1451186de6388f50800000000000000
+      internalID: 6883812423716918299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_31
+      rect:
+        serializedVersion: 2
+        x: 2026
+        y: 5342
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3d50c752b0d28de0800000000000000
+      internalID: -1332273075353264836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_32
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 5271
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8d3369ac141ef3b0800000000000000
+      internalID: -5476917983502451315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_33
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 5343
+        width: 71
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7073aec9e0b975b60800000000000000
+      internalID: 7734821372096558855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_34
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 5343
+        width: 72
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b5e4d55133deee20800000000000000
+      internalID: 3381872579048695216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_35
+      rect:
+        serializedVersion: 2
+        x: 2455
+        y: 5342
+        width: 70
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c147d6c68c238f310800000000000000
+      internalID: 1438955917338833948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_36
+      rect:
+        serializedVersion: 2
+        x: 2598
+        y: 5200
+        width: 141
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e22b329f291f9b0800000000000000
+      internalID: -5048092108562223540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_37
+      rect:
+        serializedVersion: 2
+        x: 3241
+        y: 5270
+        width: 285
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a877d62883dcdc4d0800000000000000
+      internalID: -3112606124853069942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5057
+        width: 94
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26d7601050bb37e10800000000000000
+      internalID: 2194303073625996642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_39
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 5057
+        width: 356
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68acf0d0357c60d40800000000000000
+      internalID: 5550342750296066694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_40
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 5128
+        width: 141
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a55e9385876bdceb0800000000000000
+      internalID: -4697898208285039270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_41
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 5127
+        width: 69
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3851df8f34f8474a0800000000000000
+      internalID: -6596490032088017533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_42
+      rect:
+        serializedVersion: 2
+        x: 2025
+        y: 5199
+        width: 72
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af694edbd15265fb0800000000000000
+      internalID: -4659495954798045446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_43
+      rect:
+        serializedVersion: 2
+        x: 2097
+        y: 4914
+        width: 286
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea22e39ed7aea01e0800000000000000
+      internalID: -2230712838903684434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_44
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 5199
+        width: 70
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73938738559050a90800000000000000
+      internalID: -7348456954102531785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_45
+      rect:
+        serializedVersion: 2
+        x: 2954
+        y: 5199
+        width: 71
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a4622b1f7025d100800000000000000
+      internalID: 132047494365471908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_46
+      rect:
+        serializedVersion: 2
+        x: 3098
+        y: 4914
+        width: 285
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da546b4a86b113310800000000000000
+      internalID: 1382916696833410477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_47
+      rect:
+        serializedVersion: 2
+        x: 3384
+        y: 4628
+        width: 428
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4f4372c24a8a4510800000000000000
+      internalID: 1534190642407886671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_48
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 5128
+        width: 72
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ebba80ad88e6eeb0800000000000000
+      internalID: -4690806266878313502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_49
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 5128
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d32040900bc7fd0800000000000000
+      internalID: -2342804153371050711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_50
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 5057
+        width: 73
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 315f8a14fa5d5fdf0800000000000000
+      internalID: -146976464122088173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_51
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 4842
+        width: 500
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7b4d87d64bb84c0800000000000000
+      internalID: -4284132238241253420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_52
+      rect:
+        serializedVersion: 2
+        x: 2598
+        y: 5056
+        width: 142
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bebc907246e9bf010800000000000000
+      internalID: 1223745876750093291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_53
+      rect:
+        serializedVersion: 2
+        x: 2812
+        y: 4984
+        width: 142
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9642fc337fd407d0800000000000000
+      internalID: -2952989769611458918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_54
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 4485
+        width: 715
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c5fa92353039a730800000000000000
+      internalID: 4010789948190553538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_55
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 4985
+        width: 71
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f60a804aafa3fdef0800000000000000
+      internalID: -81281420101115793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixaled_effect_white_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 4001
+        height: 4984
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06940e81a894739d0800000000000000
+      internalID: -2794684186288436896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pixaled_effect_white_0: -7632865792995912708
+      pixaled_effect_white_1: 7854827388051045012
+      pixaled_effect_white_10: 3701348889522964387
+      pixaled_effect_white_11: 5876325992914116227
+      pixaled_effect_white_12: -2564917073486051303
+      pixaled_effect_white_13: 2970978861528967266
+      pixaled_effect_white_14: -8880985980613745506
+      pixaled_effect_white_15: 4646057110191938251
+      pixaled_effect_white_16: -6275296805543768953
+      pixaled_effect_white_17: 399301018556571298
+      pixaled_effect_white_18: -2748303032035580888
+      pixaled_effect_white_19: 1708937262325505389
+      pixaled_effect_white_2: 4078267810397474827
+      pixaled_effect_white_20: 3031666756820787275
+      pixaled_effect_white_21: -6303004294155918412
+      pixaled_effect_white_22: 6473043720595068463
+      pixaled_effect_white_23: -8829158385837059025
+      pixaled_effect_white_24: 5325010218339886667
+      pixaled_effect_white_25: 2592875857553528210
+      pixaled_effect_white_26: 2503356914846601502
+      pixaled_effect_white_27: -3661422666637717775
+      pixaled_effect_white_28: 491369692412390605
+      pixaled_effect_white_29: -6234193628829649418
+      pixaled_effect_white_3: -8111261055851739693
+      pixaled_effect_white_30: 6883812423716918299
+      pixaled_effect_white_31: -1332273075353264836
+      pixaled_effect_white_32: -5476917983502451315
+      pixaled_effect_white_33: 7734821372096558855
+      pixaled_effect_white_34: 3381872579048695216
+      pixaled_effect_white_35: 1438955917338833948
+      pixaled_effect_white_36: -5048092108562223540
+      pixaled_effect_white_37: -3112606124853069942
+      pixaled_effect_white_38: 2194303073625996642
+      pixaled_effect_white_39: 5550342750296066694
+      pixaled_effect_white_4: -4295361018804940271
+      pixaled_effect_white_40: -4697898208285039270
+      pixaled_effect_white_41: -6596490032088017533
+      pixaled_effect_white_42: -4659495954798045446
+      pixaled_effect_white_43: -2230712838903684434
+      pixaled_effect_white_44: -7348456954102531785
+      pixaled_effect_white_45: 132047494365471908
+      pixaled_effect_white_46: 1382916696833410477
+      pixaled_effect_white_47: 1534190642407886671
+      pixaled_effect_white_48: -4690806266878313502
+      pixaled_effect_white_49: -2342804153371050711
+      pixaled_effect_white_5: -4059279903854552464
+      pixaled_effect_white_50: -146976464122088173
+      pixaled_effect_white_51: -4284132238241253420
+      pixaled_effect_white_52: 1223745876750093291
+      pixaled_effect_white_53: -2952989769611458918
+      pixaled_effect_white_54: 4010789948190553538
+      pixaled_effect_white_55: -81281420101115793
+      pixaled_effect_white_56: -2794684186288436896
+      pixaled_effect_white_6: 9011230879402687244
+      pixaled_effect_white_7: -8485771077301518949
+      pixaled_effect_white_8: -7165698094622023450
+      pixaled_effect_white_9: -2811052549555363090
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
