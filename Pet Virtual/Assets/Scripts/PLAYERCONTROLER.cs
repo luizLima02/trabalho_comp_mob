@@ -24,6 +24,7 @@ public class PLAYERCONTROLER : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+        Camera.main.aspect = (float)Screen.width / (float)Screen.height;
         inputActions = new InputSystem_Actions();
         hats_ids = new List<int>();
         carregar_usuario();
@@ -45,6 +46,14 @@ public class PLAYERCONTROLER : MonoBehaviour
     {
         
     }
+    public void Conversar() { }
+    public void Acariciar() { }
+
+    public void Disciplinar() { }
+
+    public void Parabenizar() { }
+
+    public void Alimentar() { }
 
     void carregar_usuario()
     {

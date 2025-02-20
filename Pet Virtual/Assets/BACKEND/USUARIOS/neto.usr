@@ -4,7 +4,7 @@ Coins:10
 {}
 [pets]
 Escolhido:DOG
-Nome:mike
+Nome:zoe
 Health:11
 Stamina:60
 Ataque:5
@@ -13,14 +13,4 @@ UsingMove:0
 [moves]
 BITE
 [ingame]
-currentLife:11
-currentStam:60
-paciencia:100
-disciplina:50
-felicidade:50
-fome:0
-toilet:0
-saude:100
-afeto:0
-higiene:100
-hat:0
+{}

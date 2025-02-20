@@ -21,6 +21,7 @@ public class ChooseController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+        Camera.main.aspect = (float)Screen.width / (float)Screen.height;
         if (choose_overlay != null)
             choose_overlay.SetActive(false);
         if (name_overlay != null)

@@ -4,7 +4,10 @@ using System.IO;
 using System.Numerics;
 using NUnit.Framework.Constraints;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using Random = System.Random;
+using Vector3 = UnityEngine.Vector3;
 
 public enum PET_STATE
 {
@@ -62,10 +65,24 @@ public class PETCONTROLLER : MonoBehaviour
     private int higiene;
     //estado do PET
     private PET_STATE pet_state;
+    //running variavles
+    private float tempoParaMudarDirecao = 0;
+    private float contadorTempo = 0;
+    private float speed_move = 0.5f;
+    private Vector3 move_dir = Vector3.left;
+    private Vector3 limiteMinimo = new Vector3(-1.7f, 0.7f);
+    private Vector3 limiteMaximo = new Vector3(1.7f, 3f);
+
+    public float Range(double minimum, double maximum)
+    {
+        Random random = new();
+        return (float)(random.NextDouble() * (maximum - minimum) + minimum);
+    }
 
     void Awake()
     {
         pet_state = PET_STATE.AWAKE;
+        tempoParaMudarDirecao = Range(1f, 5f);
         this.learnedMoves = new List<MOVES>();
         CarregarPet();
         pet = Resources.Load<Pet>($"PETS/{escolhido}");
@@ -84,6 +101,7 @@ public class PETCONTROLLER : MonoBehaviour
         {
             Debug.LogError("Falha ao carregar o ScriptableObject!");
         }
+        
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -96,9 +114,51 @@ public class PETCONTROLLER : MonoBehaviour
     {
         if (this.fome <= 80){ if (hungry_obj != null) { hungry_obj.SetActive(true);} }
         else{ if (hungry_obj != null) { hungry_obj.SetActive(false); } }
+        
+    }
+    private void Update()
+    {
+        transform.position = transform.position + (move_dir * Mathf.Lerp(0.1f, this.speed_move, (float)(currentStam) / (float)(stamina)) * Time.deltaTime);
+        contadorTempo += Time.deltaTime;
+        // Verifica se atingiu algum limite
+        if (transform.position.x <= limiteMinimo.x || transform.position.x >= limiteMaximo.x ||
+            transform.position.y <= limiteMinimo.y || transform.position.y >= limiteMaximo.y)
+        {
+            // Recalcula a direção aleatoriamente para dentro da bounding box
+            RecalcularDirecao();
+            contadorTempo = 0;
+            tempoParaMudarDirecao = Range(1f, 5f);
+        }
+
+        if (contadorTempo >= tempoParaMudarDirecao)
+        {
+            // Recalcula a direção aleatoriamente
+            RecalcularDirecao();
+            // Reseta o contador de tempo
+            contadorTempo = 0f;
+            // Define um novo tempo aleatório para mudar a direção
+            tempoParaMudarDirecao = Range(1f, 5f);
+        }
+
+
     }
 
-    
+    private void RecalcularDirecao()
+    {
+        float anguloAleatorio = Range(0f, 360f);
+        move_dir = new Vector3(Mathf.Cos(anguloAleatorio * Mathf.Deg2Rad), Mathf.Sin(anguloAleatorio * Mathf.Deg2Rad), 0f);
+
+        // Garante que a nova direção é para dentro da bounding box
+        if (transform.position.x <= limiteMinimo.x && move_dir.x < 0)
+            move_dir.x = -move_dir.x;
+        if (transform.position.x >= limiteMaximo.x && move_dir.x > 0)
+            move_dir.x = -move_dir.x;
+        if (transform.position.y <= limiteMinimo.y && move_dir.y < 0)
+            move_dir.y = -move_dir.y;
+        if (transform.position.y >= limiteMaximo.y && move_dir.y > 0)
+            move_dir.y = -move_dir.y;
+    }
+
     private void CarregarPet()
     {
         //abre o arquivo CURRENT_PET

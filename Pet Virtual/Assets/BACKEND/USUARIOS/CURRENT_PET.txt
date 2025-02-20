@@ -1,11 +1,11 @@
 [pet]
-Escolhido:DOG
-Nome:mike
-Health:11
-Stamina:60
-Ataque:5
-Speed:5
-UsingMove:0
+escolhido:DOG
+nome:zoe
+health:11
+stamina:60
+ataque:5
+speed:5
+usingMove:0
 currentLife:11
 currentStam:60
 paciencia:100
@@ -17,6 +17,6 @@ saude:100
 afeto:0
 higiene:100
 hat:0
+state:0
 [moves]
 BITE
-
