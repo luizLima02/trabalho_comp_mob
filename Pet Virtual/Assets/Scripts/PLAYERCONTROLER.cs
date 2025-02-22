@@ -46,14 +46,57 @@ public class PLAYERCONTROLER : MonoBehaviour
     {
         
     }
-    public void Conversar() { }
-    public void Acariciar() { }
 
-    public void Disciplinar() { }
+    public void Conversar() {
+        if (petController != null)
+        {
+            if (petController.Get_disciplina() < 50) { feedBack_text.text = $"{petController.Get_name()} esta ignorando voce!"; return; }
+            if (petController.Get_felicidade() < 50) { feedBack_text.text = $"{petController.Get_name()} esta triste!"; return; }
 
-    public void Parabenizar() { }
+            feedBack_text.text = $"{petController.Get_name()} esta Feliz!";
+            return;
+        }
 
-    public void Alimentar() { }
+    }
+    public void Acariciar() {
+        if (petController != null)
+        {
+            petController.Petpet();
+            feedBack_text.text = $"Peting!";
+        }
+
+    }
+
+    public void Disciplinar() {
+        if (petController != null)
+        {
+            petController.Disciplinate();
+            feedBack_text.text = $"Scolding!";
+        }
+
+    }
+
+    public void Parabenizar() {
+        if (petController != null)
+        {
+            petController.Praise();
+            feedBack_text.text = $"Praising!";
+        }
+    }
+
+    public void Alimentar() {
+        if (petController != null)
+        {
+
+        }
+    }
+
+    public void StatusPet() {
+        if (petController != null)
+        {
+            feedBack_text.text = $"{petController.Stats_pet()}";
+        }
+    }
 
     void carregar_usuario()
     {

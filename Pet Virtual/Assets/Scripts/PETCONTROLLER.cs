@@ -81,7 +81,7 @@ public class PETCONTROLLER : MonoBehaviour
 
     void Awake()
     {
-        pet_state = PET_STATE.AWAKE;
+        //pet_state = PET_STATE.AWAKE;
         tempoParaMudarDirecao = Range(1f, 5f);
         this.learnedMoves = new List<MOVES>();
         CarregarPet();
@@ -112,9 +112,18 @@ public class PETCONTROLLER : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (this.fome <= 80){ if (hungry_obj != null) { hungry_obj.SetActive(true);} }
+        //esta com fome
+        if (this.fome >= 70){ if (hungry_obj != null) { hungry_obj.SetActive(true);} }
         else{ if (hungry_obj != null) { hungry_obj.SetActive(false); } }
-        
+        //estou doente
+        if (this.saude <= 40) { if (sick_obj != null) { sick_obj.SetActive(true); } }
+        else { if (sick_obj != null) { sick_obj.SetActive(false); } }
+        //estou cansado
+        if (this.currentStam <= this.stamina/4) { if (tired_obj != null) { tired_obj.SetActive(true); } }
+        else { if (tired_obj != null) { tired_obj.SetActive(false); } }
+        //estou com sono
+        if (this.currentLife <= this.heath / 4) { if (sleepy_obj != null) { sleepy_obj.SetActive(true); } }
+        else { if (sleepy_obj != null) { sleepy_obj.SetActive(false); } }
     }
     private void Update()
     {
@@ -141,6 +150,40 @@ public class PETCONTROLLER : MonoBehaviour
         }
 
 
+    }
+    /*setters*/
+
+    public void Petpet()
+    {
+        if(paciencia < 100){paciencia++;}
+        if (afeto < 100){afeto++;}
+    }
+    
+    public void Disciplinate() {
+        if (felicidade > 0)
+        {
+            felicidade -= 3;
+        }
+        if (disciplina < 100)
+        {
+            disciplina += 2;
+        }
+    }
+
+    public void Praise() { 
+        if(disciplina > 0){disciplina -= 3;}
+        if (felicidade < 100){felicidade += 2;}
+    }
+
+    public string Stats_pet() {
+        string s = $"Health: {this.currentLife}/{this.heath}\n" +
+                   $"Stamina: {this.currentStam}/{this.stamina}\n" +
+                   $"ATK: {this.atk}\n" +
+                   $"SPEED: {this.spd}\n";
+        if(afeto >= 0 && afeto < 50) { s += $"{this.nome} esta indiferente"; }
+        else if(afeto >= 50 && afeto < 100) { s += $"{this.nome} gosta de voce"; }
+        else { s += $"{this.nome} te ama"; }
+        return s;
     }
 
     private void RecalcularDirecao()
