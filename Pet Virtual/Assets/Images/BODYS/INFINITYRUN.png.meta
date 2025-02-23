@@ -1,16 +1,31 @@
 fileFormatVersion: 2
-guid: 7550aad1cf77b27428115698793e14c1
+guid: 3b6c76e608def204d8522415f1648e6f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1875339378060513055
-    second: DOGPH_0
+      213: -2894278026329555881
+    second: INFINITYRUN_0
   - first:
-      213: 722845400380161179
-    second: DOGPH_1
+      213: -1958307862016332631
+    second: INFINITYRUN_1
   - first:
-      213: 5261784703303112777
-    second: DOGPH_2
+      213: 5150499901468135757
+    second: INFINITYRUN_2
+  - first:
+      213: -1493751192670313406
+    second: INFINITYRUN_3
+  - first:
+      213: 4825506653116910085
+    second: INFINITYRUN_4
+  - first:
+      213: 3077886508845337066
+    second: INFINITYRUN_5
+  - first:
+      213: 348907932739376955
+    second: INFINITYRUN_6
+  - first:
+      213: 4817587040897114936
+    second: INFINITYRUN_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 0.5
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,32 +105,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -130,6 +119,32 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -171,13 +186,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DOGPH_0
+      name: INFINITYRUN_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 87
-        width: 13
-        height: 25
+        x: 7
+        y: 191
+        width: 42
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,20 +201,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1e0b66985c479f5e0800000000000000
-      internalID: -1875339378060513055
+      spriteID: 75c7867387575d7d0800000000000000
+      internalID: -2894278026329555881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DOGPH_1
+      name: INFINITYRUN_1
       rect:
         serializedVersion: 2
-        x: 3
-        y: 2
-        width: 99
-        height: 114
+        x: 71
+        y: 191
+        width: 42
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +223,130 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b9c3f25df00180a00800000000000000
-      internalID: 722845400380161179
+      spriteID: 9ac69a30061b2d4e0800000000000000
+      internalID: -1958307862016332631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DOGPH_2
+      name: INFINITYRUN_2
       rect:
         serializedVersion: 2
-        x: 99
+        x: 7
+        y: 127
+        width: 42
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4151b23f504a7740800000000000000
+      internalID: 5150499901468135757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: INFINITYRUN_3
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 127
+        width: 42
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 244e11a5431254be0800000000000000
+      internalID: -1493751192670313406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: INFINITYRUN_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 127
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a41500cb4a7f240800000000000000
+      internalID: 4825506653116910085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: INFINITYRUN_5
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 127
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae981b2f879d6ba20800000000000000
+      internalID: 3077886508845337066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: INFINITYRUN_6
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 63
+        width: 42
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b371f3e8ae197d400800000000000000
+      internalID: 348907932739376955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: INFINITYRUN_7
+      rect:
+        serializedVersion: 2
+        x: 7
         y: 0
-        width: 5
-        height: 5
+        width: 42
+        height: 57
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,8 +355,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 94857fc3f4d950940800000000000000
-      internalID: 5261784703303112777
+      spriteID: 833a23793e18bd240800000000000000
+      internalID: 4817587040897114936
       vertices: []
       indices: 
       edges: []
@@ -250,9 +375,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DOGPH_0: -1875339378060513055
-      DOGPH_1: 722845400380161179
-      DOGPH_2: 5261784703303112777
+      INFINITYRUN_0: -2894278026329555881
+      INFINITYRUN_1: -1958307862016332631
+      INFINITYRUN_2: 5150499901468135757
+      INFINITYRUN_3: -1493751192670313406
+      INFINITYRUN_4: 4825506653116910085
+      INFINITYRUN_5: 3077886508845337066
+      INFINITYRUN_6: 348907932739376955
+      INFINITYRUN_7: 4817587040897114936
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

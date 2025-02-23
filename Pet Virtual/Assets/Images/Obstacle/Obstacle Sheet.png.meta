@@ -1,16 +1,22 @@
 fileFormatVersion: 2
-guid: 7550aad1cf77b27428115698793e14c1
+guid: 2781bd63d10d8da4cbc8b2c8e7bcb8e3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1875339378060513055
-    second: DOGPH_0
+      213: -2366931936857055854
+    second: Obstacle Sheet_0
   - first:
-      213: 722845400380161179
-    second: DOGPH_1
+      213: -5522323260536342541
+    second: Obstacle Sheet_1
   - first:
-      213: 5261784703303112777
-    second: DOGPH_2
+      213: 406072840362573111
+    second: Obstacle Sheet_2
+  - first:
+      213: -6199737369635407314
+    second: Obstacle Sheet_3
+  - first:
+      213: 4270709843858161658
+    second: Obstacle Sheet_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 0.3
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,32 +96,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -130,6 +110,32 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -171,13 +177,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DOGPH_0
+      name: Obstacle Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 87
-        width: 13
-        height: 25
+        x: 10
+        y: 90
+        width: 35
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1e0b66985c479f5e0800000000000000
-      internalID: -1875339378060513055
+      spriteID: 29d9b18a1f7f62fd0800000000000000
+      internalID: -2366931936857055854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DOGPH_1
+      name: Obstacle Sheet_1
       rect:
         serializedVersion: 2
-        x: 3
-        y: 2
-        width: 99
-        height: 114
+        x: 56
+        y: 90
+        width: 38
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b9c3f25df00180a00800000000000000
-      internalID: 722845400380161179
+      spriteID: 3f7bad8c044cc53b0800000000000000
+      internalID: -5522323260536342541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DOGPH_2
+      name: Obstacle Sheet_2
       rect:
         serializedVersion: 2
-        x: 99
-        y: 0
-        width: 5
-        height: 5
+        x: 103
+        y: 90
+        width: 40
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,8 +236,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 94857fc3f4d950940800000000000000
-      internalID: 5261784703303112777
+      spriteID: 73dbebac819a2a500800000000000000
+      internalID: 406072840362573111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obstacle Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 90
+        width: 42
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2aba2eb5bb16f9a0800000000000000
+      internalID: -6199737369635407314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obstacle Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 90
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afffdedc9fb944b30800000000000000
+      internalID: 4270709843858161658
       vertices: []
       indices: 
       edges: []
@@ -250,9 +300,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DOGPH_0: -1875339378060513055
-      DOGPH_1: 722845400380161179
-      DOGPH_2: 5261784703303112777
+      Obstacle Sheet_0: -2366931936857055854
+      Obstacle Sheet_1: -5522323260536342541
+      Obstacle Sheet_2: 406072840362573111
+      Obstacle Sheet_3: -6199737369635407314
+      Obstacle Sheet_4: 4270709843858161658
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
