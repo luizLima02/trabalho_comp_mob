@@ -1,45 +1,51 @@
 using UnityEngine;
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class GameController : MonoBehaviour
 {
 
-    // Propriedades do Ch„o
-    [Header("ConfiguraÁ„o do ch„o")]
+    // Propriedades do Ch√£o
+    [Header("Configura√ß√£o do ch√£o")]
     public float        _chaoDestruido;
     public float        _chaoTamanho;
     public float        _chaoVelocidade;
     public GameObject   _chaoPrefab;
 
-    [Header("ConfiguraÁ„o do obst·culo")]
+
+    [Header("Configura√ß√£o do obst√°culo")]
     public float        _ObstaculoTempo;
     public GameObject   _ObstaculoPrefab;
     public float        _ObstaculoVelocidade;
 
-    [Header("ConfiguraÁ„o do colet·vel")]
+    [Header("Configura√ß√£o do colet√°vel")]
     public float        _coletavelVelocidade;
     public GameObject   _coletavelPrefab;
     public float        _coletavelTempo;
 
-    [Header("ConfiguraÁ„o de UI")]
+    [Header("Configura√ß√£o de UI")]
     public int          _pontosPlayer;
     public Text         _txtPontos;
     public int          _vidasPlayer;
     public Text         _txtVidas;
     public Text         _txtMetros;
 
-    [Header("Controle de Dist‚ncia")]
+    [Header("Controle de Dist√¢ncia")]
     public int          _metrosPercorridos = 0;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+
         StartCoroutine("SpawnObstaculo");
         StartCoroutine("SpawnColetavel");
         InvokeRepeating("DistanciaPercorrida", 0f, 0.2f);
+
     }
 
     // Update is called once per frame
@@ -47,6 +53,7 @@ public class GameController : MonoBehaviour
     {
         
     }
+
 
     IEnumerator SpawnObstaculo()
     {
@@ -106,4 +113,5 @@ public class GameController : MonoBehaviour
             SceneController.Instance.LoadPreviousScene();
         }
     }
+
 }

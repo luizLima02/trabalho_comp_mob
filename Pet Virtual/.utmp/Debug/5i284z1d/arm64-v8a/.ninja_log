@@ -1,12 +1,12 @@
 # ninja log v5
-52	1400	7587549670844184	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	30c37e58261e9407
-10	3834	7587549697070516	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	615a5c75c02af5a7
-44	4005	7587549697969538	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	3c3ea0f68e895846
-38	4010	7587549698496665	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	1974b95d7e1e9f3c
-33	4011	7587549698064118	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	80f77ea815e18e17
-22	4012	7587549698676912	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	f5e42b23431e684b
-1	4056	7587549698611471	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	b13a81273059f56b
-27	4131	7587549700252018	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	c600bc869926f21b
-1402	4199	7587549701205589	D:/codigos/Unity Projects/trabalho_comp_mob/Pet Virtual/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/5i284z1d/obj/arm64-v8a/libswappywrapper.so	201b34e9f9e42e68
-16	4350	7587549702723726	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	95db1fec6b06b09e
-4350	4515	7587549704468114	D:/codigos/Unity Projects/trabalho_comp_mob/Pet Virtual/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/5i284z1d/obj/arm64-v8a/libgame.so	87d67c739800bb20
+54	550	7615879282439173	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	30c37e58261e9407
+551	1170	7615879287989681	D:/codigos/Unity Projects/trabalho_comp_mob/Pet Virtual/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/5i284z1d/obj/arm64-v8a/libswappywrapper.so	201b34e9f9e42e68
+23	1480	7615879291997605	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	80f77ea815e18e17
+12	1500	7615879292149993	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	615a5c75c02af5a7
+46	1504	7615879292277702	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	3c3ea0f68e895846
+30	1505	7615879292277702	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	f5e42b23431e684b
+38	1518	7615879292524879	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	1974b95d7e1e9f3c
+1	1554	7615879292936625	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	b13a81273059f56b
+18	1637	7615879293761892	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	c600bc869926f21b
+7	1672	7615879294118561	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	95db1fec6b06b09e
+1672	1793	7615879295328613	D:/codigos/Unity Projects/trabalho_comp_mob/Pet Virtual/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/5i284z1d/obj/arm64-v8a/libgame.so	87d67c739800bb20

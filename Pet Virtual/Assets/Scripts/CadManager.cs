@@ -18,6 +18,10 @@ public class CadManager : MonoBehaviour
 
     private bool EULA = false;
 
+    private void Awake()
+    {
+        Camera.main.aspect = (float)Screen.width / (float)Screen.height;
+    }
     public void set_EULA()
     {
         if (EULA)
@@ -78,6 +82,7 @@ public class CadManager : MonoBehaviour
     void writeUser(string user) 
     {
         string path = "Assets/BACKEND/UsuariosDB.txt";
+        if (!File.Exists(path)) { File.Create(path); };
         if (noUsers())
         {
             StreamWriter writerusuario = new StreamWriter(path, false);
@@ -96,6 +101,7 @@ public class CadManager : MonoBehaviour
     bool noUsers()
     {
         string path = "Assets/BACKEND/UsuariosDB.txt";
+        if(!File.Exists(path)) { File.Create(path); };
         StreamReader reader = new StreamReader(path);
         //variaveis para ler o arquivo
         string line;
@@ -113,6 +119,7 @@ public class CadManager : MonoBehaviour
     {
         //abre o arquivo UsuariosDB.txt
         string path = "Assets/BACKEND/UsuariosDB.txt";
+        if (!File.Exists(path)) { File.Create(path); };
         StreamReader reader = new StreamReader(path);
         //variaveis para ler o arquivo
         string line;
