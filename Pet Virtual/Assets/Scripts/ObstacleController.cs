@@ -6,7 +6,8 @@ public class ObstacleController : MonoBehaviour
 
     private Rigidbody2D ObstaculoRB;
 
-    private GameController _GameController;
+    private GameController  _GameController;
+    private CameraShaker    _CameraShaker;
 
     void Start()
     {
@@ -14,6 +15,8 @@ public class ObstacleController : MonoBehaviour
         //ObstaculoRB.linearVelocity = new Vector2(-250f, 0);
 
         _GameController = FindFirstObjectByType(typeof(GameController)) as GameController;
+
+        _CameraShaker = FindFirstObjectByType(typeof(CameraShaker)) as CameraShaker;
 
     }
 
@@ -32,7 +35,15 @@ public class ObstacleController : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            _GameController.PerderVida(1);
+            if (_GameController._vidasPlayer <=0)
+            {
+                Debug.Log("Fim do Jogo");
+                _GameController._txtVidas.text = "0";
+            }
             Debug.Log("Tocou no Obstaculo");
+            _CameraShaker.ShakeIt();
+            
         }
     }
 
