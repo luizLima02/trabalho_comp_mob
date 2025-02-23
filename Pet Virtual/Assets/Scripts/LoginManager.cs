@@ -18,6 +18,7 @@ public class LoginManager : MonoBehaviour
 
     private void Awake()
     {
+        Camera.main.aspect = (float)Screen.width / (float)Screen.height;
         string path = "Assets/BACKEND/USUARIOS/LOGGED_USER.txt";
         StreamReader reader = new StreamReader(path);
         string line;
@@ -153,6 +154,7 @@ public class LoginManager : MonoBehaviour
     {
         //abre o arquivo UsuariosDB
         string path = "Assets/BACKEND/UsuariosDB.txt";
+        if (!File.Exists(path)) { File.Create(path); }
         StreamReader reader = new StreamReader(path);
         string line;
         bool isInsideDictionary = false;
