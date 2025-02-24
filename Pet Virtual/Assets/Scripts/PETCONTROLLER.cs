@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Numerics;
@@ -31,6 +32,9 @@ public class PETCONTROLLER : MonoBehaviour
     SpriteRenderer Body;
     [SerializeField]
     SpriteRenderer Hat;
+    [Header("OVERLAY AREA")]
+    [SerializeField]
+    private GameObject sleep_obj_overlay;
     [Header("ESTADOS AREA")]
     //icones de estado
     [SerializeField]
@@ -72,6 +76,9 @@ public class PETCONTROLLER : MonoBehaviour
     private Vector3 move_dir = Vector3.left;
     private Vector3 limiteMinimo = new Vector3(-1.7f, 0.7f);
     private Vector3 limiteMaximo = new Vector3(1.7f, 3f);
+    /**/
+    bool awake_rodando = false;
+    bool sleep_rodando = false;
 
     public float Range(double minimum, double maximum)
     {
@@ -91,98 +98,168 @@ public class PETCONTROLLER : MonoBehaviour
             Body.sprite = pet.aparencia;
             Hat.sprite = null;
             //seta os valores no canva
-            if(pet_name_text != null) { pet_name_text.text = this.nome; }
+            if (pet_name_text != null) { pet_name_text.text = this.nome; }
             if (tired_obj != null) { tired_obj.SetActive(false); }
             if (hungry_obj != null) { hungry_obj.SetActive(false); }
             if (sleepy_obj != null) { sleepy_obj.SetActive(false); }
             if (sick_obj != null) { sick_obj.SetActive(false); }
-}
+        }
         else
         {
             Debug.LogError("Falha ao carregar o ScriptableObject!");
         }
-        
+
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        //esta com fome
-        if (this.fome >= 70){ if (hungry_obj != null) { hungry_obj.SetActive(true);} }
-        else{ if (hungry_obj != null) { hungry_obj.SetActive(false); } }
-        //estou doente
-        if (this.saude <= 40) { if (sick_obj != null) { sick_obj.SetActive(true); } }
-        else { if (sick_obj != null) { sick_obj.SetActive(false); } }
-        //estou cansado
-        if (this.currentStam <= this.stamina/4) { if (tired_obj != null) { tired_obj.SetActive(true); } }
-        else { if (tired_obj != null) { tired_obj.SetActive(false); } }
-        //estou com sono
-        if (this.currentLife <= this.heath / 4) { if (sleepy_obj != null) { sleepy_obj.SetActive(true); } }
-        else { if (sleepy_obj != null) { sleepy_obj.SetActive(false); } }
+        if (pet_state == PET_STATE.AWAKE)
+        {
+
+            //esta com fome
+            if (this.fome >= 70) { if (hungry_obj != null) { hungry_obj.SetActive(true); } }
+            else { if (hungry_obj != null) { hungry_obj.SetActive(false); } }
+            //estou doente
+            if (this.saude <= 40) { if (sick_obj != null) { sick_obj.SetActive(true); } }
+            else { if (sick_obj != null) { sick_obj.SetActive(false); } }
+            //estou cansado
+            if (this.currentStam <= this.stamina / 4) { if (tired_obj != null) { tired_obj.SetActive(true); } }
+            else { if (tired_obj != null) { tired_obj.SetActive(false); } }
+            //estou com sono
+            if (this.currentLife <= this.heath / 4) { if (sleepy_obj != null) { sleepy_obj.SetActive(true); } }
+            else { if (sleepy_obj != null) { sleepy_obj.SetActive(false); } }
+
+            //se a stamina zerar, dorme
+            if (this.currentStam <= 0)
+            {
+                StopCoroutine(Pet_Acordado());
+                StartCoroutine(Pet_Dormindo());
+                this.pet_state = PET_STATE.SLEEP;
+                this.currentStam = 0;
+                if (sleep_obj_overlay != null)
+                {
+                    sleep_obj_overlay.SetActive(true);
+                }
+                Save_pet();
+            }
+        }
+        /*vida do pet*/
+        else if (pet_state == PET_STATE.SLEEP)
+        {
+            if (this.currentStam >= this.stamina)
+            {
+                this.pet_state = PET_STATE.AWAKE;
+                StartCoroutine(Pet_Acordado());
+                StopCoroutine(Pet_Dormindo());
+                if (sleep_obj_overlay != null)
+                {
+                    sleep_obj_overlay.SetActive(false);
+
+                }
+                Save_pet();
+            }
+
+        }
     }
     private void Update()
     {
-        transform.position = transform.position + (move_dir * Mathf.Lerp(0.1f, this.speed_move, (float)(currentStam) / (float)(stamina)) * Time.deltaTime);
-        contadorTempo += Time.deltaTime;
-        // Verifica se atingiu algum limite
-        if (transform.position.x <= limiteMinimo.x || transform.position.x >= limiteMaximo.x ||
-            transform.position.y <= limiteMinimo.y || transform.position.y >= limiteMaximo.y)
+        if (awake_rodando == false && pet_state == PET_STATE.AWAKE)
         {
-            // Recalcula a direção aleatoriamente para dentro da bounding box
-            RecalcularDirecao();
-            contadorTempo = 0;
-            tempoParaMudarDirecao = Range(1f, 5f);
+            StartCoroutine(Pet_Acordado());
+        }
+        else if (sleep_rodando == false && pet_state == PET_STATE.SLEEP)
+        {
+            StartCoroutine(Pet_Dormindo());
         }
 
-        if (contadorTempo >= tempoParaMudarDirecao)
+        if (pet_state == PET_STATE.AWAKE)
         {
-            // Recalcula a direção aleatoriamente
-            RecalcularDirecao();
-            // Reseta o contador de tempo
-            contadorTempo = 0f;
-            // Define um novo tempo aleatório para mudar a direção
-            tempoParaMudarDirecao = Range(1f, 5f);
+            transform.position = transform.position + (move_dir * Mathf.Lerp(0.1f, this.speed_move, (float)(currentStam) / (float)(stamina)) * Time.deltaTime);
+            contadorTempo += Time.deltaTime;
+            // Verifica se atingiu algum limite
+            if (transform.position.x <= limiteMinimo.x || transform.position.x >= limiteMaximo.x ||
+                transform.position.y <= limiteMinimo.y || transform.position.y >= limiteMaximo.y)
+            {
+                // Recalcula a direção aleatoriamente para dentro da bounding box
+                RecalcularDirecao();
+                contadorTempo = 0;
+                tempoParaMudarDirecao = Range(1f, 5f);
+            }
+            if (contadorTempo >= tempoParaMudarDirecao)
+            {
+                // Recalcula a direção aleatoriamente
+                RecalcularDirecao();
+                // Reseta o contador de tempo
+                contadorTempo = 0f;
+                // Define um novo tempo aleatório para mudar a direção
+                tempoParaMudarDirecao = Range(1f, 5f);
+            }
         }
-
 
     }
     /*setters*/
 
+
+
     public void Petpet()
     {
-        if(paciencia < 100){paciencia++;}
-        if (afeto < 100){afeto++;}
+        if (paciencia < 100) { paciencia++; }
+        if (afeto < 100) { afeto++; }
+        Save_pet();
     }
-    
-    public void Disciplinate() {
-        if (felicidade > 0)
+
+    public void Cansar(int qnt) 
+    { 
+        this.currentStam -= qnt;
+        if (this.currentStam < 0) { this.currentStam = 0; }
+        if (this.currentStam > this.stamina) { this.currentStam = this.stamina; }
+    }
+    public void Disciplinate()
+    {
+        if (pet_state != PET_STATE.SLEEP)
         {
-            felicidade -= 3;
-        }
-        if (disciplina < 100)
-        {
-            disciplina += 2;
+            if (felicidade > 0)
+            {
+                felicidade -= 3;
+            }
+            if (disciplina < 100)
+            {
+                disciplina += 2;
+            }
+            Save_pet();
         }
     }
 
-    public void Praise() { 
-        if(disciplina > 0){disciplina -= 3;}
-        if (felicidade < 100){felicidade += 2;}
+    public void Praise()
+    {
+        if (pet_state != PET_STATE.SLEEP)
+        {
+            if (disciplina > 0) { disciplina -= 3; }
+            if (felicidade < 100) { felicidade += 2; }
+            Save_pet();
+        }
     }
 
-    public string Stats_pet() {
+    public string Stats_pet()
+    {
         string s = $"Health: {this.currentLife}/{this.heath}\n" +
                    $"Stamina: {this.currentStam}/{this.stamina}\n" +
                    $"ATK: {this.atk}\n" +
                    $"SPEED: {this.spd}\n";
-        if(afeto >= 0 && afeto < 50) { s += $"{this.nome} esta indiferente"; }
-        else if(afeto >= 50 && afeto < 100) { s += $"{this.nome} gosta de voce"; }
-        else { s += $"{this.nome} te ama"; }
+        if (afeto >= 0 && afeto < 50) { s += $"{this.nome} esta indiferente\n"; }
+        else if (afeto >= 50 && afeto < 100) { s += $"{this.nome} gosta de voce\n"; }
+        else { s += $"{this.nome} te ama\n"; }
+        if (pet_state == PET_STATE.SLEEP)
+        {
+            s += $"{this.nome} esta dormindo\n";
+            s += $"{this.nome} ira acordar quando recuperar sua stamina\n";
+        }
         return s;
     }
 
@@ -202,6 +279,41 @@ public class PETCONTROLLER : MonoBehaviour
             move_dir.y = -move_dir.y;
     }
 
+    public void Save_pet()
+    {
+        string pathPet = "Assets/BACKEND/USUARIOS/CURRENT_PET.txt";
+        StreamWriter writerPet = new StreamWriter(pathPet, false);
+        writerPet.WriteLine("[pet]");
+        writerPet.WriteLine($"escolhido:{this.escolhido}");
+        writerPet.WriteLine($"nome:{this.nome}");
+        writerPet.WriteLine($"health:{this.heath}");
+        writerPet.WriteLine($"stamina:{this.stamina}");
+        writerPet.WriteLine($"ataque:{this.atk}");
+        writerPet.WriteLine($"speed:{this.spd}");
+        writerPet.WriteLine($"usingMove:{this.using_move}");
+        //in game
+        writerPet.WriteLine($"currentLife:{this.currentLife}");
+        writerPet.WriteLine($"currentStam:{this.currentStam}");
+        //care
+        writerPet.WriteLine($"paciencia:{this.paciencia}");
+        writerPet.WriteLine($"disciplina:{this.disciplina}");
+        writerPet.WriteLine($"felicidade:{this.felicidade}");
+        writerPet.WriteLine($"fome:{this.fome}");
+        writerPet.WriteLine($"toilet:{this.toilet}");
+        writerPet.WriteLine($"saude:{this.saude}");
+        writerPet.WriteLine($"afeto:{this.afeto}");
+        writerPet.WriteLine($"higiene:{this.higiene}");
+        writerPet.WriteLine($"hat:{this.hat_id}");
+        writerPet.WriteLine($"state:{this.pet_state}");
+        //moves
+        writerPet.WriteLine("[moves]");
+        foreach (MOVES m in this.learnedMoves)
+        {
+            writerPet.WriteLine(m.ToString());
+        }
+        writerPet.Close();
+    }
+
     private void CarregarPet()
     {
         //abre o arquivo CURRENT_PET
@@ -216,12 +328,13 @@ public class PETCONTROLLER : MonoBehaviour
             {
                 inPET = true;
                 inMoves = false;
-            }else if (line.Equals("[moves]"))
+            }
+            else if (line.Equals("[moves]"))
             {
                 inPET = false;
                 inMoves = true;
             }
-            else if(line != string.Empty)
+            else if (line != string.Empty)
             {
                 if (inPET)
                 {
@@ -357,20 +470,72 @@ public class PETCONTROLLER : MonoBehaviour
 
 
     public int Get_atk() => this.atk;
-    public int Get_spd()=> this.spd;
-    public int Get_using_move()=> this.using_move;
+    public int Get_spd() => this.spd;
+    public int Get_using_move() => this.using_move;
     public List<MOVES> Get_learnedMoves() => this.learnedMoves;
     //in game
-    public int Get_currentLife()=> this.currentLife;
-    public int Get_currentStam()=> this.currentStam;
+    public int Get_currentLife() => this.currentLife;
+    public int Get_currentStam() => this.currentStam;
     //care status
-    public int Get_paciencia()=> this.paciencia;
-    public int Get_disciplina()=> this.disciplina;
-    public int Get_felicidade()=> this.felicidade;
-    public int Get_fome()=> this.fome;
-    public int Get_toilet()=> this.toilet;
-    public int Get_saude()=> this.saude;
-    public int Get_afeto()=> this.afeto;
-    public int Get_higiene()=> this.higiene;
+    public int Get_paciencia() => this.paciencia;
+    public int Get_disciplina() => this.disciplina;
+    public int Get_felicidade() => this.felicidade;
+    public int Get_fome() => this.fome;
+    public int Get_toilet() => this.toilet;
+    public int Get_saude() => this.saude;
+    public int Get_afeto() => this.afeto;
+    public int Get_higiene() => this.higiene;
     public PET_STATE Get_petstate() { return this.pet_state; }
+
+
+    //co rotines
+    IEnumerator Pet_Acordado()
+    {
+        awake_rodando = true;
+        sleep_rodando = false;
+        while (pet_state != PET_STATE.SLEEP)
+        {
+            // Aguarda 1 segundo
+            yield return new WaitForSeconds(100f);
+
+            //diminui a stamina
+
+            if (this.currentStam > 0) { this.currentStam--; }
+            //aumenta a fome
+
+            if (this.fome < 100) { this.fome++; }
+            Debug.Log($"Current Stamina: {this.currentStam}");
+            Save_pet();
+        }
+    }
+
+    IEnumerator Pet_Dormindo()
+    {
+        awake_rodando = false;
+        sleep_rodando = true;
+        while (pet_state == PET_STATE.SLEEP)
+        {
+            // Aguarda 1 segundo
+            yield return new WaitForSeconds(50f);
+
+            //diminui a stamina
+
+            if (this.currentStam < this.stamina) { this.currentStam++; }
+
+            Debug.Log($"Current Stamina: {this.currentStam}");
+            Save_pet();
+        }
+    }
+
+    // Este método é chamado quando o aplicativo ganha ou perde foco
+    void OnApplicationFocus(bool hasFocus)
+    {
+        Save_pet();
+    }
+
+    // Este método é chamado quando o aplicativo é encerrado
+    void OnApplicationQuit()
+    {
+        Save_pet();
+    }
 }

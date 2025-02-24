@@ -83,7 +83,13 @@ public class PLAYERCONTROLER : MonoBehaviour
             //se nao
             else
             {
-                petController.
+                petController.Cansar(10);
+                petController.Save_pet();
+                this.save_values();
+                if(SceneController.Instance != null)
+                {
+                    SceneController.Instance.LoadScene("Mini Game 2");
+                }
             }
         }
         
