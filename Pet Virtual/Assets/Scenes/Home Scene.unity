@@ -5959,6 +5959,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2102828209}
   - component: {fileID: 2102828210}
+  - component: {fileID: 2102828211}
   m_Layer: 0
   m_Name: Emoticon
   m_TagString: Untagged
@@ -5975,7 +5976,7 @@ Transform:
   m_GameObject: {fileID: 2102828208}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4, y: 0.94, z: 0}
+  m_LocalPosition: {x: -0.484, y: 1.184, z: 0}
   m_LocalScale: {x: 0.6348, y: 0.6348, z: 0.6348}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6025,17 +6026,39 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 7689544949322105213, guid: b36aab4327aab9f499d4ef34b27fec43, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.34, y: 0.31}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2102828211
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102828208}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bce5d05ee34fcfc4ebb3dd3f58db6fb7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2104547282
 GameObject:
   m_ObjectHideFlags: 0
