@@ -8,3 +8,13 @@ usuario:luiz
 senha:12062002
 email:teste@teste.com
 ]
+[
+usuario:escolha
+senha:123
+email:teste@teste.com
+]
+[
+usuario:dog
+senha:123
+email:teste@teste.com
+]

@@ -18,7 +18,7 @@ public class MoveBackground : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(0, _GameRaceController._backgroundSpeed, 0);
+        transform.position += new Vector3(0, _GameRaceController._backgroundSpeed*Time.deltaTime, 0);
 
         if (transform.position.y <= -13.13f)
         {

@@ -5,11 +5,11 @@ public class GameRaceController : MonoBehaviour
 {
 
     [Header("Atributos do background")]
-    public float    _backgroundSpeed = -0.008f;
+    public float    _backgroundSpeed = -8f;
     public float    _instantiateInterval = 10f;
 
     [Header("Atributos do inimigo")]
-    public float    _enemySpeed = -0.0015f;
+    public float    _enemySpeed = -30f;
 
     [Header("Configuração de UI")]
     public Text     _txtMetros;
@@ -18,7 +18,7 @@ public class GameRaceController : MonoBehaviour
     public int      _metrosPercorridos = 0;
 
     [Header("Atributos de movimento do carro")]
-    public float    _deslocamentoHorizontal = 0.5f;
+    public float    _deslocamentoHorizontal = 3f;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -40,8 +40,8 @@ public class GameRaceController : MonoBehaviour
 
         if ((_metrosPercorridos % 100) == 0)
         {
-            _backgroundSpeed -= 0.003f;
-            _enemySpeed -= 0.0008f;
+            _backgroundSpeed -= 0.1f;
+            _enemySpeed -= 0.1f;
         }
     }
 

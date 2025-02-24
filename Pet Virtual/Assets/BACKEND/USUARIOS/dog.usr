@@ -1,0 +1,16 @@
+[user]
+Coins:10
+[hats]
+{}
+[pets]
+Escolhido:DOG
+Nome:Zoe
+Health:11
+Stamina:60
+Ataque:5
+Speed:5
+UsingMove:0
+[moves]
+BITE
+[ingame]
+{}

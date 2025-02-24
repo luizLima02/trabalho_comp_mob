@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
 
     private Animator anim;
     private Rigidbody2D rig;
+    [SerializeField]
+    private SpriteRenderer body_sprite;
 
     public LayerMask LayerGround;
     public Transform checkGround;

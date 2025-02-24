@@ -1,6 +1,6 @@
 [pet]
 escolhido:DOG
-nome:zoe
+nome:Zoe
 health:11
 stamina:60
 ataque:5

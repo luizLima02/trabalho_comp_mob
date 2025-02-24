@@ -19,7 +19,8 @@ public class MovePlayerCar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (Input.GetKey("right"))     // DEBUG MODE
+        /*
+        if (Input.GetKey("right"))     // DEBUG MODE
         {
             transform.position += new Vector3(_deslocamentoHorizontal, 0, 0);
         }
@@ -27,6 +28,7 @@ public class MovePlayerCar : MonoBehaviour
         {
             transform.position += new Vector3(-_deslocamentoHorizontal, 0, 0);
         }*/
+
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);

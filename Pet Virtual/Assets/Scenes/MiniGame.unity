@@ -378,6 +378,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3460899951212838262, guid: 4719f049a25eeb4489d8c87154be71b5, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 3460899951212838262, guid: 4719f049a25eeb4489d8c87154be71b5, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9843137
+      objectReference: {fileID: 0}
+    - target: {fileID: 3460899951212838262, guid: 4719f049a25eeb4489d8c87154be71b5, type: 3}
+      propertyPath: m_Color.r
+      value: 0.90588236
+      objectReference: {fileID: 0}
     - target: {fileID: 3852517849766842275, guid: 4719f049a25eeb4489d8c87154be71b5, type: 3}
       propertyPath: m_Size.y
       value: 0.24592513
@@ -1414,7 +1426,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -3
   m_Sprite: {fileID: -7026067139923391443, guid: 441887735223867468a6c954df1cad87, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3882353, g: 0.54901963, b: 0.42745098, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1641,6 +1653,7 @@ MonoBehaviour:
   speed: 0
   isGrounded: 1
   jumpForce: 40000
+  body_sprite: {fileID: 0}
   LayerGround:
     serializedVersion: 2
     m_Bits: 256

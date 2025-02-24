@@ -18,9 +18,12 @@ public class PLAYERCONTROLER : MonoBehaviour
     //info player
     private string userName;
     private int coins;
-    private List<int> hats_ids;
+    private bool ativado = false;
+    private List<int> hats_ids; 
     [SerializeField]
     private PETCONTROLLER petController;
+    [SerializeField]
+    private GameObject Minigames_overlay;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -30,6 +33,11 @@ public class PLAYERCONTROLER : MonoBehaviour
         carregar_usuario();
         if(coins_text != null) { coins_text.text = coins.ToString(); }
         if (feedBack_text != null) { feedBack_text.text = ""; }
+        ativado = false;
+        if (Minigames_overlay != null)
+        {
+            Minigames_overlay.SetActive(ativado);
+        }
     }
 
     private void FixedUpdate()
@@ -46,6 +54,41 @@ public class PLAYERCONTROLER : MonoBehaviour
     {
         
     }
+
+    public void toggle_overlay()
+    {
+        ativado = !ativado;
+        if (Minigames_overlay != null)
+        {
+            Minigames_overlay.SetActive(ativado);
+        }
+    }
+
+    public void Go_toMiniGame()
+    {
+        //desativa o overlay
+        if (Minigames_overlay != null)
+        {
+            ativado = false;
+            Minigames_overlay.SetActive(false);
+        }
+        if (petController != null)
+        {
+            //se o pet estiver cansado
+            if(petController.Get_currentStam() < 10)
+            {
+                feedBack_text.text = $"{petController.Get_name()} esta Cansado de mais para brincar!";
+                return;
+            }
+            //se nao
+            else
+            {
+                petController.
+            }
+        }
+        
+    }
+
 
     public void Conversar() {
         if (petController != null)
