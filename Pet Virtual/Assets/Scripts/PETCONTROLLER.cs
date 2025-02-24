@@ -91,6 +91,7 @@ public class PETCONTROLLER : MonoBehaviour
         //pet_state = PET_STATE.AWAKE;
         tempoParaMudarDirecao = Range(1f, 5f);
         this.learnedMoves = new List<MOVES>();
+        if (sleep_obj_overlay != null) { sleep_obj_overlay.SetActive(false);}
         CarregarPet();
         pet = Resources.Load<Pet>($"PETS/{escolhido}");
         if (pet != null)
@@ -121,7 +122,6 @@ public class PETCONTROLLER : MonoBehaviour
     {
         if (pet_state == PET_STATE.AWAKE)
         {
-
             //esta com fome
             if (this.fome >= 70) { if (hungry_obj != null) { hungry_obj.SetActive(true); } }
             else { if (hungry_obj != null) { hungry_obj.SetActive(false); } }
@@ -131,13 +131,13 @@ public class PETCONTROLLER : MonoBehaviour
             //estou cansado
             if (this.currentStam <= this.stamina / 4) { if (tired_obj != null) { tired_obj.SetActive(true); } }
             else { if (tired_obj != null) { tired_obj.SetActive(false); } }
-            //estou com sono
-            if (this.currentLife <= this.heath / 4) { if (sleepy_obj != null) { sleepy_obj.SetActive(true); } }
-            else { if (sleepy_obj != null) { sleepy_obj.SetActive(false); } }
+            
 
             //se a stamina zerar, dorme
             if (this.currentStam <= 0)
             {
+                if (sleepy_obj != null) { sleepy_obj.SetActive(true); }
+                if (sleep_obj_overlay != null) { sleep_obj_overlay.SetActive(true); }
                 StopCoroutine(Pet_Acordado());
                 StartCoroutine(Pet_Dormindo());
                 this.pet_state = PET_STATE.SLEEP;
@@ -154,6 +154,8 @@ public class PETCONTROLLER : MonoBehaviour
         {
             if (this.currentStam >= this.stamina)
             {
+                if (sleepy_obj != null) { sleepy_obj.SetActive(false); }
+                if (sleep_obj_overlay != null) { sleep_obj_overlay.SetActive(false); }
                 this.pet_state = PET_STATE.AWAKE;
                 StartCoroutine(Pet_Acordado());
                 StopCoroutine(Pet_Dormindo());
@@ -214,8 +216,8 @@ public class PETCONTROLLER : MonoBehaviour
         Save_pet();
     }
 
-    public void Cansar(int qnt) 
-    { 
+    public void Cansar(int qnt)
+    {
         this.currentStam -= qnt;
         if (this.currentStam < 0) { this.currentStam = 0; }
         if (this.currentStam > this.stamina) { this.currentStam = this.stamina; }
@@ -277,6 +279,14 @@ public class PETCONTROLLER : MonoBehaviour
             move_dir.y = -move_dir.y;
         if (transform.position.y >= limiteMaximo.y && move_dir.y > 0)
             move_dir.y = -move_dir.y;
+
+        if(move_dir.x > 0){
+            Body.flipX = false;
+        }
+        else
+        {
+            Body.flipX = true;
+        }
     }
 
     public void Save_pet()
@@ -527,15 +537,4 @@ public class PETCONTROLLER : MonoBehaviour
         }
     }
 
-    // Este método é chamado quando o aplicativo ganha ou perde foco
-    void OnApplicationFocus(bool hasFocus)
-    {
-        Save_pet();
-    }
-
-    // Este método é chamado quando o aplicativo é encerrado
-    void OnApplicationQuit()
-    {
-        Save_pet();
-    }
 }

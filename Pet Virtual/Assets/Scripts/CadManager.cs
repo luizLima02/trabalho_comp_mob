@@ -26,26 +26,26 @@ public class CadManager : MonoBehaviour
     {
         if (EULA)
         {
-           EULA = false;
+            EULA = false;
         }
         else
         {
-           EULA = true;
+            EULA = true;
         }
         Debug.Log("EULA: " + EULA.ToString());
     }
 
     public void Cadastrar_Usuario()
     {
-        
+
         if (userinputField != null && passwordInputField != null && confpasswordInputField != null && emailInputField != null)
         {
-            if(userinputField.text != string.Empty &&
+            if (userinputField.text != string.Empty &&
                passwordInputField.text != string.Empty &&
                confpasswordInputField.text != string.Empty &&
                emailInputField.text != string.Empty)
             {
-                if(passwordInputField.text.Equals(confpasswordInputField.text) == false)
+                if (passwordInputField.text.Equals(confpasswordInputField.text) == false)
                 {
                     //erro password tem que ser iguais
                     Debug.Log("Senhas diferem");
@@ -57,7 +57,8 @@ public class CadManager : MonoBehaviour
                     Debug.Log("Usuario Ja cadastrado");
                     return;
                 }
-                if (EULA == false) {
+                if (EULA == false)
+                {
                     //marque a EULA
                     Debug.Log("marque a EULA");
                     return;
@@ -70,16 +71,16 @@ public class CadManager : MonoBehaviour
                     SceneController.Instance.LoadPreviousScene();
                 }
             }
-            
+
         }
         else
         {
             Debug.Log("Inicie os Input field");
         }
-           
+
     }
 
-    void writeUser(string user) 
+    void writeUser(string user)
     {
         string path = "Assets/BACKEND/UsuariosDB.txt";
         if (!File.Exists(path)) { File.Create(path); };
@@ -101,7 +102,7 @@ public class CadManager : MonoBehaviour
     bool noUsers()
     {
         string path = "Assets/BACKEND/UsuariosDB.txt";
-        if(!File.Exists(path)) { File.Create(path); };
+        if (!File.Exists(path)) { File.Create(path); };
         StreamReader reader = new StreamReader(path);
         //variaveis para ler o arquivo
         string line;
@@ -127,19 +128,20 @@ public class CadManager : MonoBehaviour
         //le o arquivo e procura o usarname
         while ((line = reader.ReadLine()) != null)
         {
-            if(line.Equals("[]")){ reader.Close(); return true; }
+            if (line.Equals("[]")) { reader.Close(); return true; }
             if (line.Contains("[")) { isInsideDictionary = true; }
             else if (line.Contains("]")) { isInsideDictionary = false; }
             else if (isInsideDictionary)
             {
                 string[] parts = line.Split(":");
-                if (parts.Length == 2) 
+                if (parts.Length == 2)
                 {
                     string campo = parts[0].Trim();
                     if (campo.Equals("usuario"))
                     {
                         string valor = parts[1].Trim();
-                        if (valor.Equals(username)){
+                        if (valor.Equals(username))
+                        {
                             reader.Close();
                             return false;
                         }

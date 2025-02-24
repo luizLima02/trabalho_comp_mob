@@ -75,22 +75,24 @@ public class PLAYERCONTROLER : MonoBehaviour
         if (petController != null)
         {
             //se o pet estiver cansado
-            if(petController.Get_currentStam() < 10)
+            /*if(petController.Get_currentStam() < 10)
             {
                 feedBack_text.text = $"{petController.Get_name()} esta Cansado de mais para brincar!";
                 return;
             }
             //se nao
             else
-            {
-                petController.Cansar(10);
+            {*/
+                petController.Cansar(-100);
                 petController.Save_pet();
                 this.save_values();
-                if(SceneController.Instance != null)
-                {
-                    SceneController.Instance.LoadScene("Mini Game 2");
-                }
-            }
+                Debug.Log("muda de cena");
+                
+                //if(SceneController.Instance != null)
+                //{
+                    //SceneController.Instance.LoadScene("Mini Game 2");
+                //}
+            //}
         }
         
     }
@@ -99,8 +101,8 @@ public class PLAYERCONTROLER : MonoBehaviour
     public void Conversar() {
         if (petController != null)
         {
-            if (petController.Get_disciplina() < 50) { feedBack_text.text = $"{petController.Get_name()} esta ignorando voce!"; return; }
-            if (petController.Get_felicidade() < 50) { feedBack_text.text = $"{petController.Get_name()} esta triste!"; return; }
+            if (petController.Get_disciplina() < 40) { feedBack_text.text = $"{petController.Get_name()} esta ignorando voce!"; return; }
+            if (petController.Get_felicidade() < 40) { feedBack_text.text = $"{petController.Get_name()} esta triste!"; return; }
 
             feedBack_text.text = $"{petController.Get_name()} esta Feliz!";
             return;

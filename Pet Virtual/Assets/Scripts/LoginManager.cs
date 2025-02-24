@@ -28,7 +28,9 @@ public class LoginManager : MonoBehaviour
             if (line.Equals("[]"))
             {
                 continue;
-            }else {
+            }
+            else
+            {
                 string pathUSR = $"Assets/BACKEND/USUARIOS/{line.Trim()}.usr";
                 if (File.Exists(pathUSR))
                 {
@@ -48,7 +50,7 @@ public class LoginManager : MonoBehaviour
         {
             SceneController.Instance.LoadSpecificScene(scene_name);
         }
-        
+
     }
 
     //da pra usar um inteiro e operacoes binarias nele
@@ -65,18 +67,19 @@ public class LoginManager : MonoBehaviour
         bool in_pets = false;
         bool in_moves = false;
         bool in_ingame = false;
-        while((line = reader.ReadLine()) != null)
+        while ((line = reader.ReadLine()) != null)
         {
             if (line.Equals("[user]") || line.Equals("[hats]")) { in_pets = false; in_moves = false; in_ingame = false; }
             else if (line.Equals("[pets]")) { in_pets = true; in_moves = false; in_ingame = false; }
             else if (line.Equals("[moves]")) { in_pets = false; in_moves = true; in_ingame = false; }
             else if (line.Equals("[ingame]")) { in_pets = false; in_moves = false; in_ingame = true; }
-            else if (line != string.Empty) 
+            else if (line != string.Empty)
             {
                 if (in_pets || in_ingame)
                 {
                     writer.WriteLine(line);
-                }else if (in_moves)
+                }
+                else if (in_moves)
                 {
                     moves += line + "\n";
                 }
@@ -92,10 +95,12 @@ public class LoginManager : MonoBehaviour
         bool userFieldFilled = false;
         bool passwordFieldFilled = false;
 
-        if (userinputField != null) {
-            if (userinputField.text != string.Empty) {
+        if (userinputField != null)
+        {
+            if (userinputField.text != string.Empty)
+            {
                 userFieldFilled = true;
-                Debug.Log("User: "+ userinputField.text);
+                Debug.Log("User: " + userinputField.text);
             }
         }
         if (passwordInputField != null)
@@ -105,13 +110,13 @@ public class LoginManager : MonoBehaviour
                 passwordFieldFilled = true;
                 Debug.Log("Password: " + passwordInputField.text);
             }
-            
+
         }
-        if(userFieldFilled && passwordFieldFilled)
+        if (userFieldFilled && passwordFieldFilled)
         {
             /*Realiza o login*/
             if (system_error != null) { system_error.text = ""; }
-            if(verifica_login(userinputField.text, passwordInputField.text))
+            if (verifica_login(userinputField.text, passwordInputField.text))
             {
                 string path = $"Assets/BACKEND/USUARIOS/{userinputField.text}.usr";
                 //Escreve para LOGGED_USER
@@ -132,7 +137,7 @@ public class LoginManager : MonoBehaviour
             {
                 system_error.text = "Erro de Login";
             }
-            
+
         }/*Mostra mensagem de erro*/
         else if (userFieldFilled == false)
         {
@@ -164,7 +169,7 @@ public class LoginManager : MonoBehaviour
         {
             if (line == "[]") { reader.Close(); return true; }
             if (line.Contains("[")) { isInsideDictionary = true; }
-            else if (line.Contains("]")) { isInsideDictionary = false; usernameCorrect = false; passwordCorrect = false;}
+            else if (line.Contains("]")) { isInsideDictionary = false; usernameCorrect = false; passwordCorrect = false; }
             else if (isInsideDictionary)
             {
                 //procura os campos usuario e senha
@@ -180,8 +185,9 @@ public class LoginManager : MonoBehaviour
                         {
                             usernameCorrect = true;
                         }
-                    //campo senha
-                    }else if (campo.Equals("senha"))
+                        //campo senha
+                    }
+                    else if (campo.Equals("senha"))
                     {
                         string valor = parts[1].Trim();
                         if (valor.Equals(password))
@@ -190,7 +196,7 @@ public class LoginManager : MonoBehaviour
                         }
                     }
                 }
-                if(usernameCorrect && passwordCorrect)
+                if (usernameCorrect && passwordCorrect)
                 {
                     reader.Close();
                     return true;
